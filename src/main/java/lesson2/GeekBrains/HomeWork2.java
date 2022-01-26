@@ -5,7 +5,6 @@ package lesson2.GeekBrains;
 
 public class HomeWork2 {
 
-    private static int f;
 
     public static void main(String[] args) {
         ResetTwoNumer(1, 9);
@@ -14,6 +13,7 @@ public class HomeWork2 {
         ReturnNumberOne(666);
         System.out.println(ReturnNumberOne(666));
         MetodFor();
+        ADER();
 
     }
 
@@ -39,11 +39,25 @@ public class HomeWork2 {
 
     }
 
-    public static void MetodFor() {            // я так и не понял как правильно написать условие, что бы строка применилась указанное количество раз :(
+    public static void MetodFor() {
         String srt = "Boston";
         int y = 2;
-        for (int y = 2; String srt = 2; srt = y;)
+        for (int i = 0; i < y; i++) {
             System.out.println(srt);
+        }
+    }
+
+    public static  boolean ADER() {        // не сам сделал, пробовал, но было сложно :/
+        int y = 2022;
+        if (y % 4 != 0) {
+            return false;
+        } else if (y % 400 == 0) {
+            return true;
+        } else if (y % 100 == 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
 
